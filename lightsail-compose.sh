@@ -12,3 +12,4 @@ chmod +x /usr/local/bin/docker-compose
 
 apt-get update
 apt-get install git
+apt-get install nginx
