@@ -1,0 +1,5 @@
+curl -o lightsail-compose.sh https://raw.githubusercontent.com/nishantshah-me/LaunchScriptEC2/master/lightsail-compose.sh
+
+chmod +x ./lightsail-compose.sh
+
+./lightsail-compose.sh
