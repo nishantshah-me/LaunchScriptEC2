@@ -37,7 +37,9 @@ gitlab-runner ALL=(ALL) NOPASSWD: ALL
 
 step 8:
 
-register
+sudo gitlab-runner register
 
+provide token.
+provide tag.
 - Tag is important
 
