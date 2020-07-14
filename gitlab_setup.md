@@ -17,8 +17,8 @@ Step 3:
 
 Step 4:
 
-```sudo gitlab-runner install --user=gitlab-runner --working-directory=/home/gitlab-runner
-sudo gitlab-runner start```
+``` sudo gitlab-runner install --user=gitlab-runner --working-directory=/home/gitlab-runner ```
+``` sudo gitlab-runner start ```
 
 Step 5:
 
