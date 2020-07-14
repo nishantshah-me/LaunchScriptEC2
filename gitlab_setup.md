@@ -5,20 +5,20 @@ https://docs.gitlab.com/runner/install/linux-manually.html
 
 Step 1:
 
-sudo curl -L --output /usr/local/bin/gitlab-runner https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64
+``` sudo curl -L --output /usr/local/bin/gitlab-runner https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64 ```
 
 Step 2:
 
-sudo chmod +x /usr/local/bin/gitlab-runner
+```sudo chmod +x /usr/local/bin/gitlab-runner```
 
 Step 3:
 
-sudo useradd --comment 'GitLab Runner' --create-home gitlab-runner --shell /bin/bash
+```sudo useradd --comment 'GitLab Runner' --create-home gitlab-runner --shell /bin/bash```
 
 Step 4:
 
-sudo gitlab-runner install --user=gitlab-runner --working-directory=/home/gitlab-runner
-sudo gitlab-runner start
+```sudo gitlab-runner install --user=gitlab-runner --working-directory=/home/gitlab-runner
+sudo gitlab-runner start```
 
 Step 5:
 
@@ -33,7 +33,8 @@ sudo visudo
 
 step 7:
 Now add the following to the **bottom of the file**
-gitlab-runner ALL=(ALL) NOPASSWD: ALL 
+
+```gitlab-runner ALL=(ALL) NOPASSWD: ALL ```
 
 step 8:
 
