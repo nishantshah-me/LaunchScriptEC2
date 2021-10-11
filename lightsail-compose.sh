@@ -25,4 +25,4 @@ sudo gitlab-runner start
 
 sudo usermod -a -G sudo gitlab-runner
 
-sudo gitlab-runner register --url=https://gitlab.com/ ---token=ssobXxYFPoQ-FDgGUXrG
+sudo gitlab-runner register --url=https://gitlab.com/ --registration-token=ssobXxYFPoQ-FDgGUXrG
