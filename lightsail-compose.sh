@@ -25,4 +25,14 @@ sudo gitlab-runner start
 
 sudo usermod -a -G sudo gitlab-runner
 
-sudo gitlab-runner register --url=https://gitlab.com/ --registration-token=ssobXxYFPoQ-FDgGUXrG
+sudo gitlab-runner register \
+  --non-interactive \
+  --url "https://gitlab.com/" \
+  --registration-token "ssobXxYFPoQ-FDgGUXrG" \
+  --executor "docker" \
+  --docker-image alpine:latest \
+  --description "docker-runner" \
+  --tag-list "docker,aws" \
+  --run-untagged="true" \
+  --locked="false" \
+  --access-level="not_protected"
