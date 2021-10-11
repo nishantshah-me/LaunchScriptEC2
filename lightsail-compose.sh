@@ -13,4 +13,6 @@ chmod +x /usr/local/bin/docker-compose
 #Gitlab runner
 curl -L --output /usr/local/bin/gitlab-runner https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64
 
-chmod +x /usr/local/bin/gitlab-runner
+sudo apt install gitlab-runner
+
+sudo chmod +x /usr/local/bin/gitlab-runner
